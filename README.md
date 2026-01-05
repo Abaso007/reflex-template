@@ -1,11 +1,6 @@
-<p align="center">
-    <a href="https://reflex.dev/">
-        <img style="border-radius: 5px" src="https://pbs.twimg.com/profile_banners/1580292598874271746/1690936236" alt="Logo" width="500">
-    </a>
-</p>
+# Reflex Template
 
-<p align="center">Web apps in pure Python, Built in a few minutes!</p>
-<p align="center">Build anything, faster</p>
+### The unified platform to buildand scale enterprise apps.
 
 Create your whole app in a single language. Don't worry about writing APIs to connect your frontend and backend
 
@@ -67,7 +62,7 @@ The app state is just a class. State updates are methods in the class. And the U
 
 ## What makes this work on Railway?
 
-- **Custom build plan:** [nixpacks.toml](https://github.com/brody192/reflex-template/blob/main/nixpacks.toml)
+- **Custom Dockerfile:** [Dockerfile](https://github.com/brody192/reflex-template/blob/main/Dockerfile)
 
     - Runs all the necessary commands to setup, initialize, export, and install Caddy
     - Starts the Reflex backend and Caddy server using [parallel](https://www.gnu.org/software/parallel/) to avoid having to run two separate services in the project
@@ -75,7 +70,7 @@ The app state is just a class. State updates are methods in the class. And the U
 - **The [Caddy](https://caddyserver.com/) Server/Proxy:** [Caddyfile](https://github.com/brody192/reflex-template/blob/main/Caddyfile)
 
     - Serves the exported frontend Reflex app
-    - Proxies all requests to `/backend/*` through to the Reflex backend server
+    - Proxies all nessisary backend routes through to the Reflex backend server
 
 - **The `api_url` variable:** [rxconfig.py](https://github.com/brody192/reflex-template/blob/main/rxconfig.py)
 
